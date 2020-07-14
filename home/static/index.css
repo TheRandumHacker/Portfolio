@@ -1,0 +1,81 @@
+body {
+    background-image: url(./bg.jpg);
+}
+
+.custom {
+    font-family: cursive;
+}
+
+.aboutheader {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+/*
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 5px;
+*/
+    padding: 10px;
+    margin: 10px;
+}
+
+.mypic {
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.mytext {
+    width: 600px;
+/*
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+*/
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 80px 20px 80px 20px;
+    padding: 20px;
+    text-align: justify;
+    width: auto;
+    height: 350px
+}
+
+.project:hover {
+    margin: 100px 50px 100px 50px;
+    text-decoration-thickness: 5px
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.projectimg {
+    margin: 10px 10px 0px 60px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: none; 
+    border-radius: 20px;
+}
+
+.projectimg:hover {
+    margin: 20px 20px 0px 60px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: none; 
+    border-radius: 25px;
+}

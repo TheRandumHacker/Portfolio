@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-3">Welcome to my projects page!</h1>
+    <p class="lead">On this page you can find a list of my projects ranked in order of precedence.</p>
+    <hr class="my-2">
+    <div style="display: flex; justify-content: space-around;">
+        <p class="lead"><a class="btn btn-secondary btn-lg" href="#sss" role="button">Solar System Simulator</a></p>
+        <p class="lead"><a class="btn btn-secondary btn-lg" href="#pfv" role="button">Pathfinding Visualizer</a></p>
+        <p class="lead"><a class="btn btn-secondary btn-lg" href="#discord" role="button">Discord Bot</a></p>
+        <p class="lead"><a class="btn btn-secondary btn-lg" href="#cipher" role="button">Cipher Solver</a></p>
+        <p class="lead"><a class="btn btn-secondary btn-lg" href="#mini" role="button">Mini Projects</a></p>
+    </div>
+</div>
+
+<div class="project" id="sss">
+    <div>
+        <h2>Solar System Simulator</h2>
+        <h3>
+            The Solar System Simulator is a coded implementation of Newtons gravity formula except
+            the gravitational constant as 1 for ease of use. I built this project in order to demonstrate 
+            my software development and GUIX interface development skills (with PyQt5). 
+        </h3>
+    </div>
+    <img src="{% static 'universe.png' %}" width="128" height="128" class="projectimg">
+</div>
+
+<div class="project" id="pfv">
+    <div>
+        <h2>Pathfinding Visualizer</h2>
+        <h3>
+            The project I'm most proud of, my Pathfinding Visualizer uses the pygame standard library
+            (for animation building) and the Tkinter module (for interface development). It allows you to
+            generate a grid with your custom dimensions, and populate it with walls. You set a start and end point
+            and select which of the Pathfinding algorithms you'd like to use: Djkistras' (basically BFS) or A* (hueristics approach).
+            The algorithm will than find the shortest path from the start node to the end, and you'll be able to visualize it as it works as well.
+
+        </h3>
+    </div>
+    <img src="{% static 'maze.png' %}" width="128" height="128" class="projectimg">
+</div>
+
+<div class="project" id="discord">
+    <div>
+        <h2>Discord Bot</h2>
+        <h3>
+            A Discord Bot which I made while working free-lance for a tournament hosting organization.
+            This project, unlike the others, does not have a download button, but instead contains a link 
+            to a server in which this Bot exists. Type !help for help!
+        </h3>
+    </div>
+    <img src="{% static 'discord.png' %}" width="128" height="128" class="projectimg">
+</div>
+
+<div class="project" id="cipher">
+    <div>
+        <h2>Cipher Solver</h2>
+        <h3>
+            I built the cipher solver as a kind of pet project because of my fascination with codes and ciphers, 
+            however I decided to add it to my resume because I believe it demonstrates problem solving and data manipulation skills 
+            as well. The solver allows you to choose one of five different excryption methods and than encrypt or decrypt text based
+            on that method using a secret key that you provide.
+        </h3>
+    </div>
+    <img src="{% static 'key.png' %}" width="128" height="128" class="projectimg">
+</div>
+
+<div class="project" id="mini">
+    <div>
+        <h2>Mini Projects</h2>
+        <h3>
+            A collection of some of my smaller projects. This directory contains:
+            <ul>
+                <li>A knights tour generator, classic example of backtracking algorithms.</li>
+                <li>A solution to the N-Queens problem, another classic backtracker.</li>
+                <li>A scrabble board solver, in which you can save, edit and import grids.</li>
+                <li>A little connect 4, 2 player game using python.</li>
+                <li>A snake game, with toggle able grid.</li>
+            </ul>
+        </h3>
+    </div>
+    <img src="{% static 'lego.png' %}" width="128" height="128" class="projectimg">
+</div>
+  
+{% endblock %}
